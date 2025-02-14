@@ -5,7 +5,7 @@
 [![crates.io](https://img.shields.io/crates/v/rust-mempool.svg)](https://crates.io/crates/rust-mempool)
 [![Documentation](https://docs.rs/rust-mempool/badge.svg)](https://docs.rs/rust-mempool)
 [![MIT/Apache-2 licensed](https://img.shields.io/crates/l/rust-mempool.svg)](./LICENSE.txt)
-[![CI](https://github.com/0xdavid7/rust-mempool/actions/workflows/checks.yml/badge.svg)](https://github.com/0xdavid7/rust-mempool/actions/workflows/checks.yml)
+[![CI](https://github.com/0xdavid7/rust-mempool/actions/workflows/ci.yml/badge.svg)](https://github.com/0xdavid7/rust-mempool/actions/workflows/ci.yml)
 [![Issues](https://img.shields.io/github/issues/0xdavid7/rust-mempool)](https://img.shields.io/github/issues/0xdavid7/rust-mempool)
 
 An ergonomic, [Mempool](https://mempool.space/) API Client for Rust.
