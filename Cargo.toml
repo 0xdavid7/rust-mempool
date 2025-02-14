@@ -1,0 +1,23 @@
+[package]
+name = "rust-mempool"
+version = "0.1.0"
+edition = "2021"
+
+description = "A Rust Bindings for the Mempool API"
+documentation = "https://docs.rs/rust-mempool"
+readme = "README.md"
+repository = "https://github.com/0xdavid7/rust-mempool"
+keywords = ["bitcoin", "rust", "mempool", "client", "api", "bindings"]
+categories = ["api-bindings"]
+license = "MIT"
+authors = ["David Tran <tranhuyducseven@gmail.com>"]
+
+[dependencies]
+reqwest = { version = "0.12", features = ["json"] }
+tokio = { version = "1.43.0", features = ["full"] }
+serde_json = { version = "1", default-features = false, features = ["std"] }
+serde = { version = "1", default-features = false, features = ["derive"] }
+serde_derive = "1"
+thiserror = "2.0.11"
+url = "2.3"
+tokio-test = "0.4"
