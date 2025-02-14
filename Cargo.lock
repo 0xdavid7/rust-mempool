@@ -936,7 +936,7 @@ dependencies = [
 
 [[package]]
 name = "rust-mempool"
-version = "0.1.0"
+version = "0.0.1"
 dependencies = [
  "anyhow",
  "bitcoin",

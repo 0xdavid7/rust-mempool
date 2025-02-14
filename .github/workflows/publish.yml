@@ -32,7 +32,8 @@ jobs:
       - name: Verify tag version matches Cargo.toml
         run: |
           CARGO_VERSION=$(grep -m1 'version = "' Cargo.toml | cut -d '"' -f2)
-          TAG_VERSION=${GITHUB_REF#refs/tags/v}
+          TAG_VERSION=${GITHUB_REF#refs/tags/}
+          TAG_VERSION=${TAG_VERSION#v}  # Remove 'v' prefix if present
           if [ "$CARGO_VERSION" != "$TAG_VERSION" ]; then
             echo "Version mismatch: Cargo.toml ($CARGO_VERSION) != tag ($TAG_VERSION)"
             exit 1

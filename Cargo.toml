@@ -1,13 +1,13 @@
 [package]
 name = "rust-mempool"
-version = "0.1.0"
+version = "0.0.1"
 edition = "2021"
 
 description = "A Rust Bindings for the Mempool API"
 documentation = "https://docs.rs/rust-mempool"
 readme = "README.md"
 repository = "https://github.com/0xdavid7/rust-mempool"
-keywords = ["bitcoin", "rust", "mempool", "client", "api", "bindings"]
+keywords = ["bitcoin", "mempool", "client", "api", "bindings"]
 categories = ["api-bindings"]
 license = "MIT"
 authors = ["David Tran <tranhuyducseven@gmail.com>"]
