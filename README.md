@@ -27,15 +27,12 @@ use rust_mempool::MempoolClient;
 
 #[tokio::main]
 async fn main() {
-    let client = MempoolClient::new(
-        "https://mempool.space",
-        None,
-    )
-    .unwrap();
-
-    let blocks = client.get_blocks(None).await.unwrap();
-
-    println!("{:#?}", blocks);
+    let client = MempoolClient::new(Network::Bitcoin);
+    let utxos = client
+      .get_address_utxo("1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY")
+      .await
+      .unwrap();
+      println!("{:?}", utxos);
 }
 
 ```
@@ -49,7 +46,7 @@ async fn main() {
   - [ ] GET address transactions
   - [ ] GET address transactions chain
   - [ ] GET address transactions mempool
-  - [ ] GET address UTXO
+  - [x] GET address UTXO
 - Blocks
   - [ ] GET block
   - [ ] GET block header
