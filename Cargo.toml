@@ -21,3 +21,5 @@ serde_derive = "1"
 thiserror = "2.0.11"
 url = "2.3"
 tokio-test = "0.4"
+bitcoin = { package = "bitcoin", version = "0.32.4" }
+anyhow = "1.0.89"
