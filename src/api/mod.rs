@@ -1,6 +1,7 @@
 use bitcoin::Network;
 use reqwest::Client;
 mod addresses;
+mod transactions;
 
 pub struct MempoolClient {
     client: Client,
