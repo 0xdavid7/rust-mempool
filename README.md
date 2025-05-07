@@ -92,9 +92,9 @@ async fn main() {
 
 ## Additional features:
 - Address
-  - [ ] Get batch of addresses UTXO
+  - [x] Get batch of addresses UTXO
 - Wallet
-  - [ ] Derive addresses, private keys from mnemonic
+  - [x] Derive addresses, private keys from mnemonic
 
 ## License
 

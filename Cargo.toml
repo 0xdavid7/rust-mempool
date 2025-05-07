@@ -1,6 +1,6 @@
 [package]
 name = "rust-mempool"
-version = "0.0.4"
+version = "0.0.5"
 edition = "2021"
 
 description = "A Rust Bindings for the Mempool API"
@@ -21,3 +21,4 @@ url = "2.3"
 bitcoin = { package = "bitcoin", version = "0.32.4" }
 anyhow = "1.0.89"
 bip39 = "2.1.0"
+futures = "0.3.31"
