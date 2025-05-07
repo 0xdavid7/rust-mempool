@@ -90,6 +90,12 @@ async fn main() {
   - [ ] GET transaction status
   - [x] POST transaction
 
+## Additional features:
+- Address
+  - [ ] Get batch of addresses UTXO
+- Wallet
+  - [ ] Derive addresses, private keys from mnemonic
+
 ## License
 
 Licensed under MIT license ([LICENSE-MIT](LICENSE-MIT) or <http://opensource.org/licenses/MIT>)
