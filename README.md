@@ -58,7 +58,7 @@ async fn main() {
   - [ ] GET block transaction ID
   - [ ] GET block transaction IDs
   - [ ] GET block transactions
-  - [x] GET blocks
+  - [ ] GET blocks
 - Mining
   - [ ] GET mining pools
   - [ ] GET mining pool
@@ -88,7 +88,7 @@ async fn main() {
   - [ ] GET transaction outspends
   - [ ] GET transaction raw
   - [ ] GET transaction status
-  - [ ] POST transaction
+  - [x] POST transaction
 
 ## License
 

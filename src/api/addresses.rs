@@ -1,21 +1,6 @@
 use anyhow::Result;
-use serde::Deserialize;
 
-#[derive(Debug, Deserialize)]
-pub struct UtxoStatus {
-    pub confirmed: bool,
-    pub block_height: Option<u32>,
-    pub block_hash: Option<String>,
-    pub block_time: Option<u64>,
-}
-
-#[derive(Debug, Deserialize)]
-pub struct Utxo {
-    pub txid: String,
-    pub vout: u32,
-    pub status: UtxoStatus,
-    pub value: u64,
-}
+use crate::Utxo;
 
 impl crate::MempoolClient {
     pub async fn get_address_utxo(&self, address: &str) -> Result<Vec<Utxo>> {
@@ -30,7 +15,7 @@ impl crate::MempoolClient {
 mod tests {
     use bitcoin::Network;
 
-    use crate::MempoolClient;
+    use crate::client::MempoolClient;
 
     #[tokio::test]
     async fn test_get_address_utxo() {
